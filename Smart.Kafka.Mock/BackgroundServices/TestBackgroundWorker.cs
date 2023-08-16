@@ -6,6 +6,7 @@ namespace Smart.Kafka.Mock.BackgroundServices
     {
         protected override Task ExecuteAsync(CancellationToken stoppingToken)
         {
+            //consumer.Subscribe(new string[] { "topic1", "topic2" });
             new Test().Transform();
             return Task.CompletedTask;
         }
